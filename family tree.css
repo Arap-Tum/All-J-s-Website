@@ -1,0 +1,57 @@
+body {
+    font-family: Airial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+/* flex-direction: column; */
+    align-items: center;
+}
+
+
+
+.peopleList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 150px;
+    text-align: center;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person  p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.readMore {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(10, 0, 5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.readMore:hover {
+    background-color: rgb(46, 44, 45);
+}

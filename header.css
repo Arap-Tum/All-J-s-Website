@@ -1,0 +1,107 @@
+body {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 0;
+
+    
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    background-color: rgb(33, 2, 17);
+    padding: 20px;
+    width: 100vw;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.toggle-button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(51, 51, 51, 0.9); /* Slight overlay effect */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 99;
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when toggle is clicked */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+footer {
+    background-color: #0f0f10;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}
+footer a {
+    color: #cccccc;
+    text-decoration: none;
+    
+}
+footer a:hover {
+    color: #ffffff;
+}
+

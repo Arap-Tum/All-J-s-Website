@@ -1,0 +1,97 @@
+ .intro {
+    background-color: aquamarine;
+    padding: 30px;
+    width: 100vw;
+    background-image:url(img/cows.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
+
+
+.img img{
+    width: 50vw;
+    max-height: 80vh;
+    max-width: 80vh;
+    height: auto;/*Mantain the image aspect ratio */
+    border-radius: 10px;
+
+}
+
+.blogs {
+    width: 500px;
+    margin: 12px;
+    padding: 20px;
+    color: rgb(232, 218, 218);
+    /* setting the apearence of the blog */
+    background-color: rgb(55, 2, 55);
+    font-weight: 600;
+    border-radius: 20px;
+    
+}
+
+
+
+/*Slideshow */
+.slideshow img {
+    width: 50vw;
+    max-height: 80vh;
+    max-width: 80vh;
+    height: auto;/*Mantain the image aspect ratio */
+    border-radius: 10px;
+
+}
+
+ .slideshow {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    position: relative;
+    width: 500px;
+    max-width: px; 
+    margin: 30px;
+    overflow: hidden;
+} 
+    
+
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.dots-container {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    transform: translatex(-50%);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
